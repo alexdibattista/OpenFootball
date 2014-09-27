@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  each division, i in divisions
+    div 
+      a(href='/division?div=' + division) #{division}
+

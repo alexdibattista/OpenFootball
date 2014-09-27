@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  h1 #{division} 
+  each match, i in matches
+    div #{moment(match.Date).format("YYYY/MM/DD")} #{match.HomeTeam} #{match.FTHG} - #{match.FTAG} #{match.AwayTeam}
